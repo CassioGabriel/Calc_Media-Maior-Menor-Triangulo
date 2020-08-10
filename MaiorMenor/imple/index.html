@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maior(){
+            var num01 = parseFloat(num1.value);
+            var num02 = parseFloat(num2.value);
+            if(num01 > num02){
+                var n1 = "Esse e o Maior " + num01;
+                document.getElementById("resul").innerHTML = n1;
+            }else if(num02 > num01){
+                var n1 = "Esse e o Maior " + num02;
+                document.getElementById("resul").innerHTML = n1;
+            }else if(num01 == num02){
+                document.getElementById("resul").innerHTML = "Sao iguais"
+            }
+        }
+        function menor(){
+            var num01 = parseFloat(num1.value);
+            var num02 = parseFloat(num2.value);
+            if(num01 < num02){
+                var n1 = "Esse e o Menor " + num01;
+                document.getElementById("resul").innerHTML = n1;
+            }else if(num02 < num01){
+                var n1 = "Esse e o Menor " + num02;
+                document.getElementById("resul").innerHTML = n1;
+            }else if( num01 == num02){
+                document.getElementById("resul").innerHTML = "Sao iguais";
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Calculadora Maior / Menor</h1>
+        <input id="num1" type="number" placeholder="Numero 1"/>
+        <br>
+        <input id="num2" type="number" placeholder="Numero 2"/>
+        <br>
+        <br>
+        <output id="resul" type="text" >Resultado</output>
+        <br>
+        <br>
+        <button onclick="maior()">Maior</button>
+        <br>
+        <button onclick="menor()">Menor</button>
+        <br> <br>
+        <a href="mediaMaiorMenorTriangulo/index.html">Voltar ao menu</a>
+    </center>
+</body>
+</html>

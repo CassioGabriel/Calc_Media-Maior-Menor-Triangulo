@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc(){
+            if(parseFloat(t1.value) == parseFloat(t2.value) &&  parseFloat(t1.value) == parseFloat(t3.value)){
+                document.getElementById("resul").innerHTML = "Esse e um triangula Equilatero";
+            }else if(parseFloat(t1.value) == parseFloat(t2.value)){
+                document.getElementById("resul").innerHTML = "Esse e um triangulo Esosceles";
+            }else if(parseFloat(t1.value) == parseFloat(t3.value)){
+                document.getElementById("resul").innerHTML = "Esse e um triangulo Esosceles";
+            }else if(parseFloat(t2.value) == parseFloat(t1.value)){
+                document.getElementById("resul").innerHTML = "Esse e um triangulo Esosceles";
+            }else if(parseFloat(t2.value) == parseFloat(t3.value)){
+                document.getElementById("resul").innerHTML = "Esse e um triangulo Esosceles";
+            }else if(parseFloat(t1.value) != parseFloat(t2.value) && parseFloat(t1.value) != parseFloat(t3.value)){
+                document.getElementById("resul").innerHTML = "Nao e um triangulo";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <center>
+        <h1>Calculadora de Triangulo</h1>
+        <input id="t1" type="number" placeholder="Numero 1"/>
+        <br>
+        <input id="t2" type="number" placeholder="Numero 2"/>
+        <br>
+        <input id="t3" type="number" placeholder="Numero 3"/>
+        <br>
+        <output id="resul" type="text">Resultado</output>
+        <br>
+        <button onclick="calc()">Descobrir Triangulo</button>
+        <br> <br>
+        <a href="mediaMaiorMenorTriangulo/index.html">Voltar ao menu</a>
+    </center>
+    </div>
+</body>
+</html>
